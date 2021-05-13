@@ -43,6 +43,7 @@ header ul li a{
 	color: black;
 }
 /* *********************** HEADER DO SITE*********************** */
+
 /* *********************** MOSAICO *********************** */
 
 .mosaico-single{
@@ -56,3 +57,66 @@ header ul li a{
 	border: 5px solid white;
 }
 /* *********************** MOSAICO *********************** */
+
+/* *********************** SERVIÇOS *********************** */
+
+section.servicos .center{
+	max-width: 800px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	top: -50px;
+	text-align: center;
+}
+section.servicos h2{
+	color: white;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+section.servicos p{
+	color: white;
+	margin-top: 8px;
+	font-weight: normal;
+	font-size: 13px;
+}
+.box-servico img{
+	margin-top: 20px;
+}
+section.servicos > .center .box-servico:nth-of-type(1){
+	width: 30%;
+	padding: 25px 0px 0px 0px;
+	background-color: #586777;
+}
+section.servicos > .center .box-servico:nth-of-type(2){
+	width: 40%;
+	padding: 45px 0px;
+	background-color: #698193;
+}
+section.servicos > .center .box-servico:nth-of-type(3){
+	width: 30%;
+	padding: 25px 0px 0px 0px;
+	background-color: #586777;
+}
+/* *********************** SERVIÇOS *********************** */
+
+/* *********************** PERFIL *********************** */
+section.perfil > .center{
+	max-width: 900px;
+	display: flex;
+	align-items: center;
+}
+.foto-perfil{
+	width: 354px;
+}
+aside h2{
+	margin-bottom: 25px;
+
+}
+aside p{
+	margin-bottom: 50px;
+}
+aside{
+	padding: 50px;
+	width: 546px;
+}
+/* *********************** PERFIL *********************** */
