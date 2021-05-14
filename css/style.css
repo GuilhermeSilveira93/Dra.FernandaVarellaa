@@ -25,20 +25,22 @@ header .logo img{
 	float: left;
 	width: 236px;
 }
-header nav{
+header > nav.menu-desktop{
 	float: right;
 }
-
-header nav ul{
+header nav.menu-mobile{
+	display: none;
+}
+header > nav.menu-desktop ul{
 	margin: 10px;
 	list-style-type: none;
 }
-header nav ul li{
+header > nav.menu-desktop ul li{
 	float: left;
 	padding: 0 20px;
 	font-size: 14px;
 }
-header ul li a{
+header > nav.menu-desktop ul li a{
 	text-decoration: none;
 	color: black;
 }
@@ -103,20 +105,83 @@ section.servicos > .center .box-servico:nth-of-type(3){
 section.perfil > .center{
 	max-width: 900px;
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 }
 .foto-perfil{
-	width: 354px;
+	width: 40%;
 }
-aside h2{
-	margin-bottom: 25px;
-
-}
-aside p{
-	margin-bottom: 50px;
+.foto-perfil img{
+	width: 100%;
 }
 aside{
-	padding: 50px;
-	width: 546px;
+	padding: 20px 50px;
+	width: 60%;
 }
+aside h2{
+	color: #698293;
+	font-size: 18px;
+}
+aside p{
+	color: #4b4b4b;
+	font-size: 14px;
+	margin-top: 10px;
+}
+
 /* *********************** PERFIL *********************** */
+
+/* *********************** RESPONSIVO *********************** */
+
+@media screen and (max-width:780px){
+	section.perfil > .center{
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+	.foto-perfil{
+		width: 45%;
+	}
+	.foto-perfil img{
+		width: 100%;
+	}
+	aside{
+		margin-top: 0px;
+		padding: 0px 50px;
+		width: 100%;
+	}
+	section.servicos .center{
+flex-direction: column;
+	}
+	section.servicos > .center .box-servico:nth-of-type(1){
+		width: 90%;
+		max-width: 364px;
+		padding: 25px 2%;
+		background-color: #586777;
+	}
+	section.servicos > .center .box-servico:nth-of-type(2){
+		width: 90%;
+		max-width: 384px;
+		padding: 45px 2%;
+		background-color: #698193;
+	}
+	section.servicos > .center .box-servico:nth-of-type(3){
+		width: 90%;
+		max-width: 364px;
+		padding: 25px 2%;
+		background-color: #586777;
+	}
+}
+@media screen and (max-width:825px){
+	header nav.menu-desktop{
+		display: none;
+	}
+	header nav.menu-mobile{
+		display: block;
+		float: right;
+	}
+	header .logo img{
+		float: left;
+		width: 200px;
+	}
+
+}
+/* *********************** RESPONSIVO *********************** */
