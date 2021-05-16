@@ -182,9 +182,13 @@ section.videos iframe{
 .tratamento-container{
 	width: 100%;
 }
+section.tratamentos > .center{
+	background-color: #F9F7F9;
+}
 .tratamentos > h2{
 	text-align: center;
 	color:#6A7386;
+	margin-bottom: 50px;
 }
 .tratamento-single{
 	padding: 20px 2%;
@@ -197,10 +201,57 @@ section.videos iframe{
 }
 .tratamento-container p{
 	font-size: 13px;
-	color: #b4b4b4;
+	color: #646464;
 	padding: 10px 0;
 }
 /* *********************** TRATAMENTO *********************** */
+
+/* *********************** DEPOIMENTOS *********************** */
+section.depoimentos h2{
+	text-align: center;
+	color:#6A7386;
+	margin: 50px;
+	font-size: 18px;
+}
+.depoimento-single{
+	margin: 0 auto;
+	max-width: 500px;
+	text-align: center;
+}
+.nome-depoimento{
+	margin-top: 20px;
+	text-align: center;
+}
+.nome-depoimento span{
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 20px;
+}
+/* *********************** DEPOIMENTOS *********************** */
+
+/* *********************** INSTAGRAM *********************** */
+.inst{
+	background-color: #98A4AD;
+	text-align: center;
+	padding: 20px;
+	color: white;
+}
+.fotinhas-single{
+	padding-top: 100%;
+}
+.fotinhas{
+	width: calc(100% / 9);
+	background-color: gray;
+	float: left;
+	border: 5px solid white;
+}
+.facebook{
+	background-color: #57677B;
+	text-align: center;
+	padding: 20px;
+	color: white;
+}
+/* *********************** INSTAGRAM *********************** */
 
 /* *********************** RESPONSIVO *********************** */
 @media screen and (max-width:825px){
