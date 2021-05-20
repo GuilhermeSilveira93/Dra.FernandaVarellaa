@@ -248,12 +248,62 @@ section.depoimentos h2{
 .facebook{
 	background-color: #57677B;
 	text-align: center;
-	padding: 20px;
+	padding: 25px;
 	color: white;
 }
 /* *********************** INSTAGRAM *********************** */
 
+/* *********************** FORMULARIO *********************** */
+.formulario{
+	padding: 60px 0;
+}
+.formulario h2{
+	text-align: center;
+	color:#6A7386;
+	font-size: 18px;
+}
+.formulario form{
+	margin: 30px auto;
+	max-width: 500px;
+	width: 100%;
+}
+.form-wraper span{
+	font: 13px;
+	color: #b4b4b4;
+}
+.form-wraper input{
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 9px;
+	border: 1px solid #dadada;
+	margin-bottom: 8px;
+}
+.form-wraper{
+	padding: 0 10px;
+}
+.w50{
+	width: 50%;
+	float: left;
+}
+textarea{
+	width: 100%;
+	padding: 15px ;
+	height: 121px;
+	resize: none;
+}
+/* *********************** FORMULARIO *********************** */
+
 /* *********************** RESPONSIVO *********************** */
+@media screen and (max-width:1024px){
+	.fotinhas{
+		width: calc(100% / 6);
+	}
+	.fotos-instagram div:nth-of-type(1n+7){
+		display: none;
+	}
+}
+
 @media screen and (max-width:825px){
 	header nav.menu-desktop{
 		display: none;
@@ -331,6 +381,14 @@ section.depoimentos h2{
 		padding-top: calc(100% * 0.6);
 		border: none;
 	}
+	.fotinhas{
+		width: calc(100% / 3);
+	}
+	.fotos-instagram div:nth-of-type(1n+4){
+		display: none;
+	}
+	.facebook{
+		margin-top: 20px;
 }
 
 /* *********************** RESPONSIVO *********************** */
