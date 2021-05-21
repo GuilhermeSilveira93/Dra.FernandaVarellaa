@@ -6,6 +6,7 @@
 }
 html,body{
 	height: 100%;
+	scroll-behavior: smooth; /*NÃO ESTÁ FUNCIONANDO*/
 }
 header{
 	padding: 20px 2%;
@@ -287,12 +288,50 @@ section.depoimentos h2{
 	float: left;
 }
 textarea{
+	margin-top: 20px;
 	width: 100%;
 	padding: 15px ;
 	height: 121px;
 	resize: none;
 }
+.form-wraper input[type=submit]{
+	margin: 0 auto;
+	display: inline-block;
+	border: 0;
+	color: white;
+	width: 100px;
+	background-color: #688096;
+}
 /* *********************** FORMULARIO *********************** */
+
+/* *********************** RODAPE *********************** */
+.rodape > .center{
+	background-color: #688097 ;
+	padding: 50px 200px;
+	text-align: center;
+}
+.box{
+	color: white;
+	width: calc(100% / 3);
+	float: left;
+}
+.box h2{
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+.box p{
+	font-size: 13px;
+}
+/* *********************** RODAPE *********************** */
+
+/* *********************** FOOTER *********************** */
+footer > .center{
+	background-color: #566877;
+	text-align: center;
+	padding: 20px;
+	color: white;
+}
+/* *********************** FOOTER *********************** */
 
 /* *********************** RESPONSIVO *********************** */
 @media screen and (max-width:1024px){
@@ -331,6 +370,9 @@ textarea{
 		left: 0%;
 		width: 100%;
 		height: 100%;
+	}
+	.rodape > .center{
+		padding: 50px 0px;
 	}
 }
 
@@ -389,6 +431,17 @@ textarea{
 	}
 	.facebook{
 		margin-top: 20px;
+	}
+	.rodape > .center{
+		padding: 0px 0px;
+		text-align: center;
+	}
+	.box{
+		width: 100%;
+		float: left;
+		margin: 25px;
+	}
+
 }
 
 /* *********************** RESPONSIVO *********************** */
